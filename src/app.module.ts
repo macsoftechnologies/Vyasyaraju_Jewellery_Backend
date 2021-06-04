@@ -11,6 +11,8 @@ import { queriesModule } from './queries/queries.module';
 import { productsModule } from './product/product.module';
 import { reviewsModule } from './reviews/reviews.module';
 import { contactModule } from './contact/contact.module';
+import { SubscribeModule } from './subscribe/subscribe.module';
+import { imagesModule } from './images/images.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot({type: 'mysql',
@@ -29,9 +31,10 @@ import { contactModule } from './contact/contact.module';
       queriesModule,
       productsModule,
       reviewsModule,
-      contactModule
-   
-  ],
+      contactModule,
+      SubscribeModule,
+      imagesModule
+    ],
   controllers: [AppController],
   providers: [AppService],
 })

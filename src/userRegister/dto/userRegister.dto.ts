@@ -13,6 +13,20 @@ export class UserRegisterDto {
 
   @ApiProperty()
   ConfirmPassword:string
-  
+}
 
+export class loginDto {
+  
+  
+  @ApiProperty()
+  LoginId: string;
+ 
+  @ApiProperty()
+  Password: string;
+}
+
+export class subscribeDto{
+
+  @ApiProperty()
+  Email: string;
 }
